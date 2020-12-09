@@ -9,6 +9,8 @@ class Tuner
 private:
     QString description;
     Amplifier *amplifier;
+    double frequency;
+
 public:
     Tuner();
     Tuner(QString description, Amplifier *amplifier);
@@ -16,7 +18,7 @@ public:
     void off();
     void setAm();
     void setFm();
-    void setFrequency();
+    void setFrequency(double frequency);
     QString toString();
 };
 

@@ -8,6 +8,9 @@ using namespace std;
 #include "dvdplayer.h"
 #include "cdplayer.h"
 #include "screen.h"
+#include "popcornpopper.h"
+#include "theaterlights.h"
+#include "projector.h"
 
 class HomeTheaterFacade
 {
@@ -16,9 +19,15 @@ private:
     Tuner *tuner;
     DvdPlayer *dvd;
     CdPlayer *cd;
+    TheaterLights *lights;
     Screen *screen;
+    PopcornPopper *popper;
+    Projector *projector;
+
+
+
 public:
-    HomeTheaterFacade(Amplifier*,Tuner*,DvdPlayer*,CdPlayer*,Screen*);
+    HomeTheaterFacade(Amplifier*,Tuner*,DvdPlayer*,CdPlayer*,Projector*,TheaterLights*,Screen*,PopcornPopper*);
     void watchMovie(QString movie);
     void endMovie();
     void listenToCd(QString cdTitle);
