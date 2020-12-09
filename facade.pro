@@ -9,8 +9,10 @@ CONFIG -= app_bundle
 
 SOURCES += \
         amplifier.cpp \
+        dvdplayer.cpp \
         hometheaterfacade.cpp \
-        main.cpp
+        main.cpp \
+        tuner.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -19,4 +21,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     amplifier.h \
-    hometheaterfacade.h
+    dvdplayer.h \
+    hometheaterfacade.h \
+    tuner.h
