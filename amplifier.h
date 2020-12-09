@@ -14,6 +14,8 @@ private:
     QString description;
     Tuner *tuner;
     CdPlayer *cd;
+    DvdPlayer *dvd;
+
 
 public:
     Amplifier(QString description);
@@ -24,7 +26,7 @@ public:
     void setStereoSound();
     void setSurroundSoud();
     void setTuner(Tuner *tuner);
-    void setVolume();
+    void setVolume(int level);
     void toString();
 
 
